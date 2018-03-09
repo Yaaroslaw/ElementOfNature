@@ -2,30 +2,88 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+<style>
+    .home-container {
+    display: grid;    
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 80px 550px 80px;
+}
+    header {
+    grid-column: span 12;
+}
+    header {
+    display: flex;
+     background-color: #070423;
+}   
+    /*TODO:ADD img DIRECTORY*/
+main {
+    grid-column: span 12;
+    background-color: green;
+    background-image:url("../../Content/spring-flowers-nature-cool.jpg");
+}
+footer {
+    grid-column: span 12;
+    background-color: #070423;
+}
+header > span:nth-child(3) {
+    margin-left: auto;
+}
+.header-span{
+    color: white;
+    font-size:30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:20px 50px;
+}
+.footer-text{
+    color: white;
+    font-size:15px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    margin-left:10px;
+}
+.main-text{
+   display: block;
+    margin-top: -240px;
+    margin-left: -300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 820px;
+}
+h1{
+    color: #fff;
+    font-family: Lato,sans-serif;
+    font-size: 56px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+    line-height: 1.3em;
+}
+p{
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5em;
+    letter-spacing: .5px;
+}
+</style>
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-    </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+<div class="home-container">
+    <header>
+        <span class="header-span">ELEMENT</span>
+        <span class="header-span">GALLERY</span>
+        <span class="header-span">LOGIN/REGISTER</span>
+    </header>
+    <main>
+        <div class="main-text">
+            <h1>ELEMENT OF NATURE</h1>
+            <p>Each jewelery is a piece of nature,<br>a piece of unique and original art.</p>
+        </div>
+    </main>
+    <footer>
+        <span class="footer-text">FIND US ON:</span><br />
+        <a class ="footer-text"href="https://www.instagram.com/_e.l.e.m.e.n.t_/">@@INSTAGRAM</a><br />
+        <a class ="footer-text"href="https://www.etsy.com/shop/FlowersElement?ref=profile_shopname">@@ETSY</a><br />
+        <a class ="footer-text"href="https://www.facebook.com/element.nature/">@@FACEBOOK</a>
+    </footer>
 </div>
