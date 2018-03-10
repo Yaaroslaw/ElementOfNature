@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ElementOfNature.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -12,6 +13,22 @@ namespace ElementOfNature.Controllers
         {
             return View();
         }
+        public ActionResult Gallery()
+        {
+            Element newFlower = new Element
+            {
+                Name = "тигр",
+                Type = "кулон",
+                Id = 0,
+                IsPresent = true,
+                IsRealToMake = true,
+                Price = 100,
+                Review = "Найкращий кулон, який я тільки купляла",
+                Description = "Чудовий кулон з тиговими квітами"
+            };
+            return View(newFlower);
+        }
+
 
         public ActionResult About()
         {

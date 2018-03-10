@@ -1,0 +1,124 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+@* LINKS TO STYLES *@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    .home-container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: 80px 550px 80px;
+    }
+
+    header {
+        grid-column: span 12;
+    }
+
+    header {
+        display: flex;
+        background-color: #070423;
+    }
+    /*TODO:ADD img DIRECTORY*/
+    main {
+        grid-column: span 12;
+        background-color: green;
+        background-image: url("../../Content/element2.jpg");
+    }
+
+    footer {
+        grid-column: span 12;
+        background-color: #070423;
+    }
+
+    header > span:nth-child(3) {
+        margin-left: auto;
+    }
+
+    .header-span {
+        color: white;
+        font-size: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 20px 50px;
+    }
+
+    .footer-text {
+        color: white;
+        font-size: 15px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: none;
+        margin-left: 10px;
+    }
+
+    .main-text {
+        display: block;
+        margin-top: -240px;
+        margin-left: -300px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 820px;
+    }
+
+    h1 {
+        color: #fff;
+        font-family: Lato,sans-serif;
+        font-size: 56px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+        letter-spacing: 4px;
+        line-height: 1.3em;
+    }
+
+    p {
+        color: #fff;
+        font-size: 18px;
+        line-height: 1.5em;
+        letter-spacing: .5px;
+    }
+
+    .fa {
+        font-size: 36px;
+        margin-left: 20px;
+    }
+    a{
+        text-decoration:none;
+    }
+   #primary{
+       color:cornflowerblue;
+    }
+</style>
+
+<html>
+<body>
+    <div class="home-container">
+        <header>
+             <a class="header-span" href="/Home/Index">ELEMENT</a>
+             <a class="header-span" id="primary" href="/Home/Gallery">GALLERY</a>
+            <span class="header-span">LOGIN/REGISTER</span>
+        </header>
+        <main>
+            <div class="main-text">
+                <div class="testElement">                    
+                </div>
+            </div>
+        </main>
+        <footer>
+            <span class="footer-text">FIND US ON:</span><br />
+            <a class="footer-text" href="https://www.instagram.com/_e.l.e.m.e.n.t_/"><span class="fa fa-instagram"></span></a>
+            <a class="footer-text" href="https://www.etsy.com/shop/FlowersElement?ref=profile_shopname"><span class="fa fa-etsy" style="font-size:30px"></span></a>
+            <a class="footer-text" href="https://www.facebook.com/element.nature/"><span class="fa fa-facebook-square"></span></a>
+        </footer>
+    </div>
+</body>
+</html>
+
+<script>
+</script>

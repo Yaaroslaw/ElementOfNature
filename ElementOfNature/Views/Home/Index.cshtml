@@ -72,24 +72,43 @@ p{
     line-height: 1.5em;
     letter-spacing: .5px;
 }
+.fa{
+    font-size:36px;
+    margin-left:20px;
+}
+    a{
+        text-decoration:none;
+    }
+    #primary{
+        color:cornflowerblue;
+    }
 </style>
 
-<div class="home-container">
-    <header>
-        <span class="header-span">ELEMENT</span>
-        <span class="header-span">GALLERY</span>
-        <span class="header-span">LOGIN/REGISTER</span>
-    </header>
-    <main>
-        <div class="main-text">
-            <h1>ELEMENT OF NATURE</h1>
-            <p>Each jewelery is a piece of nature,<br>a piece of unique and original art.</p>
-        </div>
-    </main>
-    <footer>
-        <span class="footer-text">FIND US ON:</span><br />
-        <a class ="footer-text"href="https://www.instagram.com/_e.l.e.m.e.n.t_/"><span class="fa fa-instagram" style="font-size:36px"></span></a>
-        <a class ="footer-text"href="https://www.etsy.com/shop/FlowersElement?ref=profile_shopname"><span class="fa fa-etsy" style="font-size:36px"></span></a>
-        <a class ="footer-text"href="https://www.facebook.com/element.nature/"><span class="fa fa-facebook-square" style="font-size:36px"></span></a>
-    </footer>
-</div>
+
+@* TODO: MEDIA QUERY *@
+@*_Layout and ViewStart fix :NAVBAR AND FOOTER*@
+
+
+<html>
+<body>
+    <div class="home-container">
+        <header>
+            <a class="header-span" id="primary"href="/Home/Index">ELEMENT</a>
+            <a class="header-span" href="/Home/Gallery">GALLERY</a>
+            <span class="header-span">LOGIN/REGISTER</span>
+        </header>
+        <main>
+            <div class="main-text">
+                <h1>ELEMENT OF NATURE</h1>
+                <p>Each jewelery is a piece of nature,<br>a piece of unique and original art.</p>
+            </div>
+        </main>
+        <footer>
+            <span class="footer-text">FIND US ON:</span><br />
+            <a class="footer-text" href="https://www.instagram.com/_e.l.e.m.e.n.t_/"><span class="fa fa-instagram"></span></a>
+            <a class="footer-text" href="https://www.etsy.com/shop/FlowersElement?ref=profile_shopname"><span class="fa fa-etsy" style="font-size:30px"></span></a>
+            <a class="footer-text" href="https://www.facebook.com/element.nature/"><span class="fa fa-facebook-square"></span></a>
+        </footer>
+    </div>
+</body>
+</html>
